@@ -1,235 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Student Hub Portal</title>
 </head>
 
 <body>
-<table border="1" width="100%" cellpadding="10">
 
-<tr>
-
-<td width="20%" align="center">
-
-<img src="studenthublogo.jpg" width="110" height="110" alt="Logo">
-
-</td>
-
-<td align="center">
-
-<h1>STUDENT HUB PORTAL</h1>
-
-<h3>Student Dashboard</h3>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-
-<table border="1" width="100%" cellpadding="8">
-
-<tr align="center">
-
-<th><a href="index.html">Home</a></th>
-
-<th><a href="about.html">About</a></th>
-
-<th><a href="login.html">Login</a></th>
-
-<th><a href="dashboard.html">Dashboard</a></th>
-
-<th><a href="academics.html">Academics</a></th>
-
-<th><a href="notice.html">Notices</a></th>
-
-<th><a href="events.html">Events</a></th>
-
-<th><a href="studentsupport.html">Support</a></th>
-
-<th><a href="contact.html">Contact Us</a></th>
-
-<th><a href="feedback.html">Feedback</a></th>
-
-<th><a href="profile.html">Profile</a></th>
-
-</tr>
-
-</table>
-
-<br>
-
-<center>
-
-<h2>Welcome, Student</h2>
-
-<p>Access all your academic services from one place.</p>
-
-</center>
-
-<hr>
-
-<h2 align="center">Dashboard Modules</h2>
-
-<table border="1" width="100%" cellpadding="15">
-
-<tr align="center">
-
-<td>
-
-<h3>Academics</h3>
-
-<p>Study materials, syllabus and timetable.</p>
-
-<a href="academics.html">Open</a>
-
-</td>
-
-<td>
-
-<h3>Certificates</h3>
-
-<p>View and download certificates.</p>
-
-<a href="certificates.html">Open</a>
-
-</td>
-
-<td>
-
-<h3>Notices</h3>
-
-<p>Latest college announcements.</p>
-
-<a href="notice.html">Open</a>
-
-</td>
-
-</tr>
-
-<tr align="center">
-
-<td>
-
-<h3>Events</h3>
-
-<p>Upcoming workshops and competitions.</p>
-
-<a href="events.html">Open</a>
-
-</td>
-
-<td>
-
-<h3>Student Support</h3>
-
-<p>Raise complaints or request help.</p>
-
-<a href="studentsupport.html">Open</a>
-
-</td>
-
-<td>
-
-<h3>Profile</h3>
-
-<p>View your personal information.</p>
-
-<a href="profile.html">Open</a>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<h2 align="center">Student Summary</h2>
-
-<table border="1" width="70%" align="center" cellpadding="10">
-
-<tr>
-
-<th>Information</th>
-
-<th>Status</th>
-
-</tr>
-
-<tr>
-
-<td>Attendance</td>
-
-<td>90%</td>
-
-</tr>
-
-<tr>
-
-<td>Current Semester</td>
-
-<td>Semester 3</td>
-
-</tr>
-
-<tr>
-
-<td>Assignments</td>
-
-<td>4 Pending</td>
-
-</tr>
-
-<tr>
-
-<td>Upcoming Exams</td>
-
-<td>2</td>
-
-</tr>
-
-<tr>
-
-<td>Certificates Available</td>
-
-<td>3</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<h2 align="center">Recent Activities</h2>
-
-<ul>
-
-<li>AI Workshop Registration Open.</li>
-
-<li>Semester Result Published.</li>
-
-<li>Hackathon on 15th August.</li>
-
-<li>New Java Study Material Uploaded.</li>
-
-<li>Internal Exam Timetable Released.</li>
-
-</ul>
-
-<hr>
-
-<center>
-
-<h3>Student Hub Portal © 2026</h3>
-
-<p>Designed for Educational Purpose</p>
-
-</center>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header role="banner">
+        <table border="1" width="100%" cellpadding="10">
+            <tr>
+                <td width="20%" align="center">
+                    <img src="studenthublogo.jpg" width="110" height="110" alt="Student Hub Logo">
+                </td>
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                    <h3>Student Dashboard</h3>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Navigation Menu -->
+        <nav aria-label="Main Navigation">
+            <table border="1" width="100%" cellpadding="8">
+                <tr align="center">
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="about.html">About</a></th>
+                    <th><a href="login.html">Login</a></th>
+                    <th><a href="dashboard.html" aria-current="page">Dashboard</a></th>
+                    <th><a href="academics.html">Academics</a></th>
+                    <th><a href="notice.html">Notices</a></th>
+                    <th><a href="events.html">Events</a></th>
+                    <th><a href="studentsupport.html">Support</a></th>
+                    <th><a href="contact.html">Contact Us</a></th>
+                    <th><a href="feedback.html">Feedback</a></th>
+                    <th><a href="profile.html">Profile</a></th>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <br>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+        <!-- Intermediate Extension: Breadcrumb Navigation -->
+        <nav aria-label="Breadcrumb">
+            <p align="left">
+                <a href="index.html">Home</a> &gt; <b>Dashboard</b>
+            </p>
+        </nav>
+
+        <section aria-labelledby="welcome-heading">
+            <div align="center">
+                <h2 id="welcome-heading">Welcome, Student</h2>
+                <p>Access all your academic services from one place.</p>
+            </div>
+            <hr>
+        </section>
+
+        <!-- Dashboard Grid Modules Section -->
+        <section aria-labelledby="modules-heading">
+            <h2 id="modules-heading" align="center">Dashboard Modules</h2>
+
+            <table border="1" width="100%" cellpadding="15">
+                <tbody>
+                    <tr align="center">
+                        <td width="33%">
+                            <article>
+                                <h3>Academics</h3>
+                                <p>Study materials, syllabus and timetable.</p>
+                                <a href="academics.html" aria-label="Open Academics module">Open</a>
+                            </article>
+                        </td>
+                        <td width="33%">
+                            <article>
+                                <h3>Certificates</h3>
+                                <p>View and download certificates.</p>
+                                <a href="certificates.html" aria-label="Open Certificates module">Open</a>
+                            </article>
+                        </td>
+                        <td width="33%">
+                            <article>
+                                <h3>Notices</h3>
+                                <p>Latest college announcements.</p>
+                                <a href="notice.html" aria-label="Open Notices module">Open</a>
+                            </article>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <article>
+                                <h3>Events</h3>
+                                <p>Upcoming workshops and competitions.</p>
+                                <a href="events.html" aria-label="Open Events module">Open</a>
+                            </article>
+                        </td>
+                        <td>
+                            <article>
+                                <h3>Student Support</h3>
+                                <p>Raise complaints or request help.</p>
+                                <a href="studentsupport.html" aria-label="Open Student Support module">Open</a>
+                            </article>
+                        </td>
+                        <td>
+                            <article>
+                                <h3>Profile</h3>
+                                <p>View your personal information.</p>
+                                <a href="profile.html" aria-label="Open Profile module">Open</a>
+                            </article>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <!-- Student Summary Section -->
+        <section aria-labelledby="summary-heading">
+            <h2 id="summary-heading" align="center">Student Summary</h2>
+
+            <table border="1" width="70%" align="center" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th scope="col" width="50%">Information</th>
+                        <th scope="col" width="50%">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" align="left">Attendance</th>
+                        <td align="center">90%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" align="left">Current Semester</th>
+                        <td align="center">Semester 3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" align="left">Assignments</th>
+                        <td align="center">4 Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" align="left">Upcoming Exams</th>
+                        <td align="center">2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" align="left">Certificates Available</th>
+                        <td align="center">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <!-- Recent Activities Section -->
+        <aside aria-labelledby="recent-activities-heading">
+            <h2 id="recent-activities-heading" align="center">Recent Activities</h2>
+
+            <div align="center">
+                <ul style="display: inline-block; text-align: left;">
+                    <li>AI Workshop Registration Open.</li>
+                    <li>Semester Result Published.</li>
+                    <li>Hackathon on <time datetime="2026-08-15">15th August</time>.</li>
+                    <li>New Java Study Material Uploaded.</li>
+                    <li>Internal Exam Timetable Released.</li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+    <br>
+    <hr>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <div align="center">
+            <h3>Student Hub Portal © 2026</h3>
+            <p>Designed for Educational Purpose</p>
+        </div>
+    </footer>
 
 </body>
 

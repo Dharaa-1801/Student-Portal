@@ -1,241 +1,178 @@
-<!--<html>
-    <head>
-        <title>Student Login</title>
-    </head>
-    <body>
-        <center>
-            <br><br><br><br><br><br><br><br>
-        <h1>Student Login</h1><br>
-        <form action="home.html" method="get">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-            <input type="submit" value="Login">
-        </form>
-    </body>
-</center>
-</html>--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Student Hub Portal</title>
 </head>
 
 <body>
 
-<table border="1" width="100%" cellpadding="10">
-
-<tr>
-
-<td width="20%" align="center">
-
-<img src="studenthublogo.jpg" width="110" height="110" alt="Logo">
-
-</td>
-
-<td align="center">
-
-<h1>STUDENT HUB PORTAL</h1>
-
-<h3>Empowering Students Through Digital Learning</h3>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<table border="1" width="100%" cellpadding="8">
-
-<tr align="center">
-
-<th><a href="index.html">Home</a></th>
-
-<th><a href="about.html">About</a></th>
-
-<th><a href="login.html">Login</a></th>
-
-<th><a href="dashboard.html">Dashboard</a></th>
-
-<th><a href="academics.html">Academics</a></th>
-
-<th><a href="notice.html">Notices</a></th>
-
-<th><a href="events.html">Events</a></th>
-
-<th><a href="studentsupport.html">Support</a></th>
-
-<th><a href="contact.html">Contact Us</a></th>
-
-<th><a href="feedback.html">Feedback</a></th>
-
-<th><a href="profile.html">Profile</a></th>
-
-</tr>
-
-</table>
-
-<br>
-
-<center>
-
-<h1>Student Login</h1>
-
-<p>Please enter your login credentials.</p>
-
-</center>
-
-<br>
-
-<form>
-
-<table border="1" cellpadding="10" align="center" width="40%">
-
-<tr>
-
-<th colspan="2">Login Form</th>
-
-</tr>
-
-<tr>
-
-<td>Username</td>
-
-<td><input type="text" name="username" size="30" required></td>
-
-</tr>
-
-<tr>
-
-<td>Password</td>
-
-<td><input type="password" name="password" size="30" required></td>
-
-</tr>
-
-<tr>
-
-<td>Select Role</td>
-
-<td>
-
-<input type="radio" name="role" required> Student
-
-<input type="radio" name="role" required> Faculty
-
-<input type="radio" name="role" required> Admin
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Remember Me</td>
-
-<td>
-
-<input type="checkbox" > Keep me logged in
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="2" align="center">
-
-<input type="submit" value="Login" >
-
-<input type="reset" value="Clear">
-
-</td>
-
-</tr>
-
-</table>
-
-</form>
-
-<br>
-
-<fieldset>
-
-<legend><b>Login Instructions</b></legend>
-
-<ul>
-
-<li>Enter your valid Enrollment Number.</li>
-
-<li>Use your registered password.</li>
-
-<li>Select your appropriate role before logging in.</li>
-
-<li>Contact the administrator if you forget your password.</li>
-
-</ul>
-
-</fieldset>
-
-<br>
-
-<table border="1" width="60%" align="center" cellpadding="8">
-
-<tr>
-
-<th colspan="2">Demo Login Credentials</th>
-
-</tr>
-
-<tr>
-
-<th>User</th>
-
-<th>Username</th>
-
-</tr>
-
-<tr>
-
-<td>Student</td>
-
-<td>STU001</td>
-
-</tr>
-
-<tr>
-
-<td>Faculty</td>
-
-<td>FAC001</td>
-
-</tr>
-
-<tr>
-
-<td>Admin</td>
-
-<td>ADM001</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<hr>
-
-<center>
-
-<h3>Student Hub Portal © 2026</h3>
-
-</center>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header role="banner">
+        <table border="1" width="100%" cellpadding="10">
+            <tr>
+                <td width="20%" align="center">
+                    <img src="studenthublogo.jpg" width="110" height="110" alt="Student Hub Logo">
+                </td>
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                    <h3>Empowering Students Through Digital Learning</h3>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Navigation Menu -->
+        <nav aria-label="Main Navigation">
+            <table border="1" width="100%" cellpadding="8">
+                <tr align="center">
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="about.html">About</a></th>
+                    <th><a href="login.html" aria-current="page">Login</a></th>
+                    <th><a href="dashboard.html">Dashboard</a></th>
+                    <th><a href="academics.html">Academics</a></th>
+                    <th><a href="notice.html">Notices</a></th>
+                    <th><a href="events.html">Events</a></th>
+                    <th><a href="studentsupport.html">Support</a></th>
+                    <th><a href="contact.html">Contact Us</a></th>
+                    <th><a href="feedback.html">Feedback</a></th>
+                    <th><a href="profile.html">Profile</a></th>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <br>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+        <!-- Intermediate Extension: Breadcrumb Navigation -->
+        <nav aria-label="Breadcrumb">
+            <p align="left">
+                <a href="index.html">Home</a> &gt; <b>Login</b>
+            </p>
+        </nav>
+
+        <section aria-labelledby="login-title">
+            <div align="center">
+                <h1 id="login-title">Student Login</h1>
+                <p>Please enter your login credentials.</p>
+            </div>
+
+            <br>
+
+            <!-- Accessible Form -->
+            <form action="dashboard.html" method="post">
+                <table border="1" cellpadding="10" align="center" width="40%">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Login Form</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="username">Username</label></td>
+                            <td><input type="text" id="username" name="username" size="30" required aria-required="true" autocomplete="username"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" id="password" name="password" size="30" required aria-required="true" autocomplete="current-password"></td>
+                        </tr>
+                        <tr>
+                            <td>Select Role</td>
+                            <td>
+                                <input type="radio" id="role-student" name="role" value="student" required>
+                                <label for="role-student">Student</label>
+                                
+                                <input type="radio" id="role-faculty" name="role" value="faculty" required>
+                                <label for="role-faculty">Faculty</label>
+                                
+                                <input type="radio" id="role-admin" name="role" value="admin" required>
+                                <label for="role-admin">Admin</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Remember Me</td>
+                            <td>
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">Keep me logged in</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Login">
+                                <input type="reset" value="Clear">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+
+        <br>
+
+        <!-- Instructions Section -->
+        <aside aria-labelledby="instructions-heading">
+            <fieldset>
+                <legend><b id="instructions-heading">Login Instructions</b></legend>
+                <ul>
+                    <li>Enter your valid Enrollment Number.</li>
+                    <li>Use your registered password.</li>
+                    <li>Select your appropriate role before logging in.</li>
+                    <li>Contact the administrator if you forget your password.</li>
+                </ul>
+            </fieldset>
+        </aside>
+
+        <br>
+
+        <!-- Demo Credentials Table -->
+        <section aria-labelledby="demo-credentials-heading">
+            <table border="1" width="60%" align="center" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th colspan="2" id="demo-credentials-heading">Demo Login Credentials</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">User</th>
+                        <th scope="col">Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">Student</td>
+                        <td align="center">STU001</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Faculty</td>
+                        <td align="center">FAC001</td>
+                    </tr>
+                    <tr>
+                        <td align="center">Admin</td>
+                        <td align="center">ADM001</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <br>
+    <hr>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <div align="center">
+            <h3>Student Hub Portal © 2026</h3>
+        </div>
+    </footer>
 
 </body>
 
