@@ -1,0 +1,283 @@
+/* ==========================================================================
+   StudentHub Portal - Main Stylesheet (Practical 3)
+   ========================================================================== */
+
+/* 1. Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #454343;
+    padding: 20px;
+}
+
+/* Accessibility Skip Link */
+a[href="#main-content"] {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #003366;
+    color: #ffffff;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+a[href="#main-content"]:focus {
+    top: 0;
+}
+
+/* Links */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/* 2. Header & Banner Layout */
+header {
+    background-color: #ffffff;
+    border: 1px solid #817a7a;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header table {
+    border-collapse: collapse;
+}
+
+header h1 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+header h3 {
+    color: #4e73a3;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+/* 3. Navigation Styling */
+nav[aria-label="Main Navigation"] table {
+    background-color: #003366;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+nav[aria-label="Main Navigation"] th {
+     background-color: #003366;
+    padding: 0;
+}
+
+nav[aria-label="Main Navigation"] a {
+    display: block;
+    color: #f0f3f7;
+    padding: 10px 12px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+nav[aria-label="Main Navigation"] a:hover,
+nav[aria-label="Main Navigation"] a:focus {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+nav[aria-label="Main Navigation"] a[aria-current="page"] {
+    background-color: #3669c8;
+    color: #000000;
+}
+
+/* Breadcrumbs */
+nav[aria-label="Breadcrumb"] {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* 4. Main Content & Sections */
+main {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+section, aside {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #003366;
+    border-radius: 6px;
+    padding: 15px 20px;
+    background-color: #fcfcfc;
+}
+
+legend {
+    color: #003366;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Lists */
+ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* 5. Table Styling (Data Tables & Timetables) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color:white;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    color: #333333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* 6. Forms & Inputs (Login, Certificates, Requests) */
+form table {
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+
+label {
+    font-weight: 600;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 86, 179, 0.3);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+/* 7. Image Handling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Profile Photo Framing */
+img[alt*="Dhara Sarvaiya"],
+img[alt*="Photo"] {
+    border: 3px solid #003366;
+    padding: 3px;
+    background-color: #ffffff;
+}
+
+/* 8. Footer Section */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+footer h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
