@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Student Hub Portal</title>
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Link for Keyboard Accessibility -->
     <a href="#main-content">Skip to main content</a>
 
-    <!-- Header Section -->
     <header role="banner">
         <table border="1" width="100%" cellpadding="10">
             <tr>
@@ -22,14 +20,13 @@
                 </td>
                 <td align="center">
                     <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Contact Us</h3>
+                    <h3>Helpdesk &amp; Contact Directory</h3>
                 </td>
             </tr>
         </table>
 
         <br>
 
-        <!-- Navigation Menu -->
         <nav aria-label="Main Navigation">
             <table border="1" width="100%" cellpadding="8">
                 <tr align="center">
@@ -40,7 +37,7 @@
                     <th><a href="academics.html">Academics</a></th>
                     <th><a href="notice.html">Notices</a></th>
                     <th><a href="events.html">Events</a></th>
-                    <th><a href="studentsupport.html">Student Support</a></th>
+                    <th><a href="studentsupport.html">Support</a></th>
                     <th><a href="contact.html" aria-current="page">Contact Us</a></th>
                     <th><a href="feedback.html">Feedback</a></th>
                     <th><a href="profile.html">Profile</a></th>
@@ -51,57 +48,61 @@
 
     <br>
 
-    <!-- Main Content Area -->
     <main id="main-content">
 
-        <!-- Intermediate Extension: Breadcrumb Navigation -->
         <nav aria-label="Breadcrumb">
             <p align="left">
                 <a href="index.html">Home</a> &gt; <b>Contact Us</b>
             </p>
         </nav>
 
-        <section aria-labelledby="contact-page-title">
+        <section aria-labelledby="contact-title">
             <div align="center">
-                <h2 id="contact-page-title">Get in Touch</h2>
-                <p>We are always happy to assist you.</p>
+                <h1 id="contact-title">Campus Helpdesk &amp; Support</h1>
+                <p>Have questions? Reach out to the respective department coordinators or administrative section.</p>
             </div>
             <hr>
+        </section>
 
-            <!-- College Contact Information Table Section -->
-            <h2 id="contact-info-heading" align="center">College Contact Information</h2>
+        <br>
 
-            <table border="1" width="80%" align="center" cellpadding="10" aria-labelledby="contact-info-heading">
+        <!-- Department Directory Table -->
+        <section aria-labelledby="directory-heading">
+            <h2 id="directory-heading" align="center">Department Contact Directory</h2>
+
+            <table border="1" width="100%" cellpadding="10">
                 <thead>
                     <tr>
-                        <th scope="col" width="40%">Department</th>
-                        <th scope="col">Contact</th>
+                        <th scope="col">Department / Office</th>
+                        <th scope="col">Contact Person</th>
+                        <th scope="col">Email Address</th>
+                        <th scope="col">Helpline Number</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Administration Office</td>
-                        <td><a href="tel:+919876543210">+91 98765 43210</a></td>
+                        <td><b>Computer Engineering Dept.</b></td>
+                        <td>Head of Department (HOD)</td>
+                        <td><a href="mailto:hod.computer@studenthub.edu">hod.computer@studenthub.edu</a></td>
+                        <td><a href="tel:+912637200101">+91 (02637) 200101</a></td>
                     </tr>
                     <tr>
-                        <td>Academic Office</td>
-                        <td><a href="tel:+919876543211">+91 98765 43211</a></td>
+                        <td><b>Academic &amp; GTU Section</b></td>
+                        <td>Student Admin Officer</td>
+                        <td><a href="mailto:academics@studenthub.edu">academics@studenthub.edu</a></td>
+                        <td><a href="tel:+912637200102">+91 (02637) 200102</a></td>
                     </tr>
                     <tr>
-                        <td>Examination Cell</td>
-                        <td><a href="tel:+919876543212">+91 98765 43212</a></td>
+                        <td><b>Scholarship &amp; Certificate Cell</b></td>
+                        <td>Document In-Charge</td>
+                        <td><a href="mailto:certificates@studenthub.edu">certificates@studenthub.edu</a></td>
+                        <td><a href="tel:+912637200103">+91 (02637) 200103</a></td>
                     </tr>
                     <tr>
-                        <td>Library</td>
-                        <td><a href="tel:+919876543213">+91 98765 43213</a></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><a href="mailto:info@studenthub.edu">info@studenthub.edu</a></td>
-                    </tr>
-                    <tr>
-                        <td>Office Hours</td>
-                        <td>Monday - Saturday (<time datetime="09:00">9:00 AM</time> - <time datetime="17:00">5:00 PM</time>)</td>
+                        <td><b>IT &amp; Portal Support</b></td>
+                        <td>System Administrator</td>
+                        <td><a href="mailto:itsupport@studenthub.edu">itsupport@studenthub.edu</a></td>
+                        <td><a href="tel:+912637200104">+91 (02637) 200104</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -110,52 +111,42 @@
         <br>
 
         <!-- Contact Form Section -->
-        <section aria-labelledby="send-message-heading">
-            <h2 id="send-message-heading" align="center">Send Us a Message</h2>
+        <section aria-labelledby="inquiry-heading">
+            <h2 id="inquiry-heading" align="center">Send an Official Inquiry</h2>
 
             <form action="#" method="post">
-                <table border="1" width="60%" align="center" cellpadding="10">
-                    <thead>
-                        <tr>
-                            <th colspan="2">Contact Form</th>
-                        </tr>
-                    </thead>
+                <table border="1" width="65%" align="center" cellpadding="10">
                     <tbody>
                         <tr>
-                            <td><label for="full-name">Full Name</label></td>
-                            <td><input type="text" id="full-name" name="full_name" size="35" required aria-required="true" autocomplete="name"></td>
+                            <td><label for="caller-name">Full Name <span aria-hidden="true">*</span></label></td>
+                            <td><input type="text" id="caller-name" name="caller_name" size="35" required aria-required="true" autocomplete="name"></td>
                         </tr>
                         <tr>
-                            <td><label for="contact-email">Email</label></td>
-                            <td><input type="email" id="contact-email" name="contact_email" size="35" required aria-required="true" autocomplete="email"></td>
+                            <td><label for="caller-email">Email Address <span aria-hidden="true">*</span></label></td>
+                            <td><input type="email" id="caller-email" name="caller_email" size="35" required aria-required="true" autocomplete="email"></td>
                         </tr>
                         <tr>
-                            <td><label for="phone-number">Phone Number</label></td>
-                            <td><input type="tel" id="phone-number" name="phone_number" size="35" required aria-required="true" autocomplete="tel"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="target-department">Department</label></td>
+                            <td><label for="inquiry-dept">Select Department <span aria-hidden="true">*</span></label></td>
                             <td>
-                                <select id="target-department" name="target_department" required aria-required="true">
-                                    <option value="">-- Select Department --</option>
-                                    <option value="administration">Administration</option>
-                                    <option value="academic">Academic Office</option>
-                                    <option value="examination">Examination Cell</option>
-                                    <option value="library">Library</option>
-                                    <option value="technical">Technical Support</option>
+                                <select id="inquiry-dept" name="inquiry_dept" required aria-required="true">
+                                    <option value="">-- Choose Department --</option>
+                                    <option value="cse">Computer Science &amp; Engg.</option>
+                                    <option value="admin">Student Admin Office</option>
+                                    <option value="exam">Examination Cell</option>
+                                    <option value="it">IT Support</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td><label for="user-message">Message</label></td>
+                            <td><label for="message-box">Message / Inquiry <span aria-hidden="true">*</span></label></td>
                             <td>
-                                <textarea id="user-message" name="user_message" rows="5" cols="35" required aria-required="true"></textarea>
+                                <textarea id="message-box" name="message" rows="5" cols="35" placeholder="Write your inquiry here..." required aria-required="true"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" align="center">
                                 <input type="submit" value="Send Message">
-                                <input type="reset" value="Clear">
+                                <input type="reset" value="Reset Form">
                             </td>
                         </tr>
                     </tbody>
@@ -163,58 +154,11 @@
             </form>
         </section>
 
-        <br>
-
-        <!-- College Address Section -->
-        <aside aria-labelledby="address-heading">
-            <fieldset>
-                <legend><b id="address-heading">College Address</b></legend>
-                <address style="font-style: normal;">
-                    <b>Student Hub Portal</b><br>
-                    Charotar University of Science and Technology<br>
-                    Changa, Nadiad<br>
-                    Anand, Gujarat - 388421<br>
-                    India
-                </address>
-            </fieldset>
-        </aside>
-
-        <br>
-
-        <!-- Emergency Contact Section -->
-        <section aria-labelledby="emergency-heading">
-            <h2 id="emergency-heading" align="center">Emergency Contact</h2>
-
-            <table border="1" width="60%" align="center" cellpadding="10" aria-labelledby="emergency-heading">
-                <thead>
-                    <tr>
-                        <th scope="col" width="50%">Service</th>
-                        <th scope="col">Phone Number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Security Office</td>
-                        <td align="center"><a href="tel:+919876543000">+91 98765 43000</a></td>
-                    </tr>
-                    <tr>
-                        <td>Medical Room</td>
-                        <td align="center"><a href="tel:+919876543001">+91 98765 43001</a></td>
-                    </tr>
-                    <tr>
-                        <td>Student Help Desk</td>
-                        <td align="center"><a href="tel:+919876543002">+91 98765 43002</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
     </main>
 
     <br>
     <hr>
 
-    <!-- Footer Section -->
     <footer role="contentinfo">
         <div align="center">
             <h3>Student Hub Portal © 2026</h3>

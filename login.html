@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Student Hub Portal</title>
-    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Link for Keyboard Accessibility -->
     <a href="#main-content">Skip to main content</a>
 
     <!-- Header Section -->
@@ -22,7 +21,7 @@
                 </td>
                 <td align="center">
                     <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Empowering Students Through Digital Learning</h3>
+                    <h3>User Authentication &amp; Campus Portal Access</h3>
                 </td>
             </tr>
         </table>
@@ -54,62 +53,69 @@
     <!-- Main Content Area -->
     <main id="main-content">
 
-        <!-- Intermediate Extension: Breadcrumb Navigation -->
+        <!-- Breadcrumb Navigation -->
         <nav aria-label="Breadcrumb">
             <p align="left">
-                <a href="index.html">Home</a> &gt; <b>Login</b>
+                <a href="index.html">Home</a> &gt; <b>Portal Login</b>
             </p>
         </nav>
 
-        <section aria-labelledby="login-title">
+        <section aria-labelledby="login-heading">
             <div align="center">
-                <h1 id="login-title">Student Login</h1>
-                <p>Please enter your login credentials.</p>
+                <h1 id="login-heading">Sign In to Student Hub Portal</h1>
+                <p>Enter your institutional credentials to access your dashboard, courses, and records.</p>
             </div>
+            <hr>
+        </section>
 
-            <br>
+        <br>
 
-            <!-- Accessible Form -->
-            <form action="dashboard.html" method="post">
-                <table border="1" cellpadding="10" align="center" width="40%">
+        <!-- Main Login Form -->
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading" align="center">User Authentication Panel</h2>
+
+            <form action="dashboard.html" method="get">
+                <table border="1" width="55%" align="center" cellpadding="12">
                     <thead>
-                        <tr>
-                            <th colspan="2">Login Form</th>
+                        <tr align="center">
+                            <th scope="col" colspan="2">CAMPUS USER LOGIN</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><label for="username">Username</label></td>
-                            <td><input type="text" id="username" name="username" size="30" required aria-required="true" autocomplete="username"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="password">Password</label></td>
-                            <td><input type="password" id="password" name="password" size="30" required aria-required="true" autocomplete="current-password"></td>
-                        </tr>
-                        <tr>
-                            <td>Select Role</td>
+                            <td width="35%"><label for="user-role">Role:</label></td>
                             <td>
-                                <input type="radio" id="role-student" name="role" value="student" required>
-                                <label for="role-student">Student</label>
-                                
-                                <input type="radio" id="role-faculty" name="role" value="faculty" required>
-                                <label for="role-faculty">Faculty</label>
-                                
-                                <input type="radio" id="role-admin" name="role" value="admin" required>
-                                <label for="role-admin">Admin</label>
+                                <select id="user-role" name="role" required aria-required="true">
+                                    <option value="student" selected>Student</option>
+                                    <option value="faculty">Faculty / Mentor</option>
+                                    <option value="admin">Administrator</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
-                            <td>Remember Me</td>
+                            <td><label for="username">Username:</label></td>
                             <td>
-                                <input type="checkbox" id="remember" name="remember">
-                                <label for="remember">Keep me logged in</label>
+                                <input type="text" id="username" name="username" placeholder="e.g. 25CSXXX" required aria-required="true" size="30">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="center">
-                                <input type="submit" value="Login">
-                                <input type="reset" value="Clear">
+                            <td><label for="password">Password:</label></td>
+                            <td>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required aria-required="true" size="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Session Option:</b></td>
+                            <td>
+                                <input type="checkbox" id="remember-me" name="remember">
+                                <label for="remember-me">Remember me on this browser</label>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="2">
+                                <input type="submit" value="Sign In">
+                                &nbsp;&nbsp;
+                                <input type="reset" value="Clear Form">
                             </td>
                         </tr>
                     </tbody>
@@ -119,49 +125,17 @@
 
         <br>
 
-        <!-- Instructions Section -->
-        <aside aria-labelledby="instructions-heading">
-            <fieldset>
-                <legend><b id="instructions-heading">Login Instructions</b></legend>
-                <ul>
-                    <li>Enter your valid Enrollment Number.</li>
-                    <li>Use your registered password.</li>
-                    <li>Select your appropriate role before logging in.</li>
-                    <li>Contact the administrator if you forget your password.</li>
-                </ul>
-            </fieldset>
-        </aside>
-
-        <br>
-
-        <!-- Demo Credentials Table -->
-        <section aria-labelledby="demo-credentials-heading">
-            <table border="1" width="60%" align="center" cellpadding="8">
-                <thead>
-                    <tr>
-                        <th colspan="2" id="demo-credentials-heading">Demo Login Credentials</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">User</th>
-                        <th scope="col">Username</th>
-                    </tr>
-                </thead>
+        <!-- Login Support Shortcuts -->
+        <aside aria-labelledby="help-heading">
+            <table border="1" width="55%" align="center" cellpadding="8">
                 <tbody>
-                    <tr>
-                        <td align="center">Student</td>
-                        <td align="center">STU001</td>
-                    </tr>
-                    <tr>
-                        <td align="center">Faculty</td>
-                        <td align="center">FAC001</td>
-                    </tr>
-                    <tr>
-                        <td align="center">Admin</td>
-                        <td align="center">ADM001</td>
+                    <tr align="center">
+                        <td><a href="studentsupport.html">Forgot Password/Reset</a></td>
+                        <td><a href="studentsupport.html">Portal Helpdesk &amp; IT Support</a></td>
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </aside>
 
     </main>
 

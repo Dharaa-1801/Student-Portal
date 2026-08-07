@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Student Hub Portal</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Activity &amp; Profile - Student Hub Portal</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Link for Keyboard Accessibility -->
     <a href="#main-content">Skip to main content</a>
 
     <!-- Header Section -->
@@ -22,7 +21,7 @@
                 </td>
                 <td align="center">
                     <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Student Profile</h3>
+                    <h3>Student Activity &amp; Achievement Profile</h3>
                 </td>
             </tr>
         </table>
@@ -40,7 +39,7 @@
                     <th><a href="academics.html">Academics</a></th>
                     <th><a href="notice.html">Notices</a></th>
                     <th><a href="events.html">Events</a></th>
-                    <th><a href="studentsupport.html">Student Support</a></th>
+                    <th><a href="studentsupport.html">Support</a></th>
                     <th><a href="contact.html">Contact Us</a></th>
                     <th><a href="feedback.html">Feedback</a></th>
                     <th><a href="profile.html" aria-current="page">Profile</a></th>
@@ -54,79 +53,44 @@
     <!-- Main Content Area -->
     <main id="main-content">
 
-        <!-- Intermediate Extension: Breadcrumb Navigation -->
+        <!-- Breadcrumb Navigation -->
         <nav aria-label="Breadcrumb">
             <p align="left">
-                <a href="index.html">Home</a> &gt; <b>Profile</b>
+                <a href="index.html">Home</a> &gt; <b>Student Activity &amp; Timeline</b>
             </p>
         </nav>
 
-        <section aria-labelledby="profile-page-title">
+        <section aria-labelledby="timeline-title">
             <div align="center">
-                <h2 id="profile-page-title">Student Profile</h2>
-                <p>View your personal and academic information.</p>
+                <h1 id="timeline-title">Student Profile &amp; Journey Timeline</h1>
+                <p>Computer Science &amp; Engineering | Academic Milestones &amp; Track</p>
             </div>
             <hr>
+        </section>
 
-            <!-- Personal Information Main Table -->
-            <table border="1" width="90%" align="center" cellpadding="10" aria-label="Student Personal Details Container">
+        <br>
+
+        <!-- SECTION 1: Top Identity Banner -->
+        <section aria-labelledby="student-identity-heading">
+            <h2 id="student-identity-heading" align="center">Quick Identity Overview</h2>
+
+            <table border="1" width="85%" align="center" cellpadding="12">
                 <tbody>
                     <tr>
-                        <td width="25%" align="center">
-                            <img src="22357.jpg" width="180" height="200" alt="Profile photo of Dhara Sarvaiya">
-                            <br><br>
-                            <b>Student Photo</b>
+                        <td width="20%" align="center">
+                            <img src="22357.jpg" width="110" height="130" alt="Student Profile Photo">
                         </td>
-                        <td>
-                            <!-- Profile Information Key-Value Table -->
-                            <table border="1" width="100%" cellpadding="8" aria-label="Personal Details">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row" align="left">Student Name</th>
-                                        <td>Dhara Sarvaiya</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Enrollment Number</th>
-                                        <td>25CS093</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Course</th>
-                                        <td>B.Tech Computer Science &amp; Engineering</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Semester</th>
-                                        <td>Semester 3</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Division</th>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Roll Number</th>
-                                        <td>01</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Date of Birth</th>
-                                        <td><time datetime="2007-01-01">01 January 2007</time></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Gender</th>
-                                        <td>Female</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Email</th>
-                                        <td><a href="mailto:student@example.com">student@example.com</a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Mobile Number</th>
-                                        <td><a href="tel:+919876543210">+91 98765 43210</a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" align="left">Address</th>
-                                        <td>Navsari, Gujarat</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <td width="40%">
+                            <h3>Dhara Sarvaiya</h3>
+                            <p><b>Enrollment:</b> 25CS093</p>
+                            <p><b>Department:</b> Computer Science &amp; Engineering</p>
+                            <p><b>Semester:</b> Semester 3</p>
+                        </td>
+                        <td width="40%">
+                            <p><b>Academic Advisor:</b> Prof. Vaibhavi Patel</p>
+                            <p><b>Current CGPA:</b> 8.75 / 10</p>
+                            <p><b>Attendance Score:</b> 91%</p>
+                            <p><b>Email:</b> 25cs093@studenthub.edu</p>
                         </td>
                     </tr>
                 </tbody>
@@ -135,37 +99,43 @@
 
         <br>
 
-        <!-- Academic Details Table Section -->
-        <section aria-labelledby="academic-details-heading">
-            <h2 id="academic-details-heading" align="center">Academic Details</h2>
+        <!-- SECTION 2: Academic & Activity Timeline -->
+        <section aria-labelledby="activity-timeline-heading">
+            <h2 id="activity-timeline-heading" align="center">Academic Journey &amp; Milestones</h2>
 
-            <table border="1" width="80%" align="center" cellpadding="10" aria-labelledby="academic-details-heading">
+            <table border="1" width="85%" align="center" cellpadding="10">
                 <thead>
                     <tr>
-                        <th scope="col" width="40%">Information</th>
-                        <th scope="col">Details</th>
+                        <th scope="col" width="20%">Date / Term</th>
+                        <th scope="col" width="25%">Category</th>
+                        <th scope="col">Milestone Details</th>
+                        <th scope="col" width="15%">Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Department</td>
-                        <td>Computer Science &amp; Engineering</td>
+                        <td align="center">August 2026</td>
+                        <td>Coursework</td>
+                        <td>Enrolled in Semester 3 Core Engineering Modules (OOP, DSA, Discrete Math)</td>
+                        <td align="center">Active</td>
                     </tr>
                     <tr>
-                        <td>Current Semester</td>
-                        <td>3</td>
+                        <td align="center">April 2026</td>
+                        <td>Academic Project</td>
+                        <td>Designed &amp; Submitted Digital Electronics Smart Door Lock Sequence Detector Project</td>
+                        <td align="center">Completed</td>
                     </tr>
                     <tr>
-                        <td>Attendance</td>
-                        <td>91%</td>
+                        <td align="center">January 2026</td>
+                        <td>Campus Event</td>
+                        <td>Participated in "Sales Man of the Year" Entrepreneurship Competition</td>
+                        <td align="center">Participated</td>
                     </tr>
                     <tr>
-                        <td>CGPA</td>
-                        <td>8.75</td>
-                    </tr>
-                    <tr>
-                        <td>Academic Status</td>
-                        <td>Regular Student</td>
+                        <td align="center">Semester 1 &amp; 2</td>
+                        <td>University Exams</td>
+                        <td>Cleared both semesters with First Class Distinction (Zero Backlogs)</td>
+                        <td align="center">Passed</td>
                     </tr>
                 </tbody>
             </table>
@@ -173,91 +143,35 @@
 
         <br>
 
-        <!-- Current Semester Subjects Table Section -->
-        <section aria-labelledby="subjects-heading">
-            <h2 id="subjects-heading" align="center">Current Semester Subjects</h2>
+        <!-- SECTION 3: Current Semester Submissions & Tasks -->
+        <section aria-labelledby="tasks-heading">
+            <h2 id="tasks-heading" align="center">Current Tasks &amp; Submissions Status</h2>
 
-            <table border="1" width="90%" align="center" cellpadding="10" aria-labelledby="subjects-heading">
+            <table border="1" width="85%" align="center" cellpadding="10">
                 <thead>
                     <tr>
-                        <th scope="col" width="30%">Subject Code</th>
-                        <th scope="col">Subject Name</th>
+                        <th scope="col">Subject Title</th>
+                        <th scope="col">Task Description</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Submission Link</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>CEUE203</td>
                         <td>Object Oriented Programming</td>
+                        <td>Practical Assignment - Class &amp; Inheritance Lab Work</td>
+                        <td>Upcoming</td>
+                        <td align="center"><a href="studymaterials.html">Submit File</a></td>
                     </tr>
                     <tr>
-                        <td>MSUD203</td>
-                        <td>Discrete Mathematics</td>
-                    </tr>
-                    <tr>
-                        <td>CSUC201</td>
-                        <td>Fundamentals of Data Structures and Algorithms</td>
-                    </tr>
-                    <tr>
-                        <td>ITUC201</td>
-                        <td>Fundamentals of Computer Networks</td>
-                    </tr>
-                    <tr>
-                        <td>ITUE203</td>
-                        <td>Web Development Frameworks</td>
+                        <td>Data Structures &amp; Algorithms</td>
+                        <td>Lab Sheet 2 - Linked List Implementation</td>
+                        <td>Upcoming</td>
+                        <td align="center"><a href="studymaterials.html">Submit File</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
-
-        <br>
-
-        <!-- Skills Section -->
-        <section aria-labelledby="skills-heading">
-            <h2 id="skills-heading" align="center">Skills</h2>
-            <div align="center">
-                <ul style="display: inline-block; text-align: left;">
-                    <li>Java Programming</li>
-                    <li>C Programming</li>
-                    <li>HTML</li>
-                    <li>Problem Solving</li>
-                    <li>Teamwork</li>
-                    <li>Communication Skills</li>
-                </ul>
-            </div>
-        </section>
-
-        <br>
-
-        <!-- Achievements Section -->
-        <aside aria-labelledby="achievements-heading">
-            <fieldset>
-                <legend><b id="achievements-heading">Achievements</b></legend>
-                <ul>
-                    <li>Participated in College Coding Competition.</li>
-                    <li>Completed HTML &amp; Java Basics.</li>
-                    <li>Active Member of Technical Club.</li>
-                    <li>Participated in Workshops and Seminars.</li>
-                </ul>
-            </fieldset>
-        </aside>
-
-        <br>
-
-        <!-- Quick Links Table Section -->
-        <nav aria-labelledby="quick-links-heading">
-            <h2 id="quick-links-heading" align="center">Quick Links</h2>
-
-            <table border="1" width="70%" align="center" cellpadding="10" aria-labelledby="quick-links-heading">
-                <tbody>
-                    <tr align="center">
-                        <td><a href="dashboard.html">Dashboard</a></td>
-                        <td><a href="academics.html">Academics</a></td>
-                        <td><a href="certificates.html">Certificates</a></td>
-                        <td><a href="feedback.html">Feedback</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </nav>
 
     </main>
 

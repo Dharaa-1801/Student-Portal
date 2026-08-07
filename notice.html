@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notices - Student Hub Portal</title>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Link for Keyboard Accessibility -->
     <a href="#main-content">Skip to main content</a>
 
-    <!-- Header Section -->
     <header role="banner">
         <table border="1" width="100%" cellpadding="10">
             <tr>
@@ -22,14 +20,13 @@
                 </td>
                 <td align="center">
                     <h1>STUDENT HUB PORTAL</h1>
-                    <h3>College Notices & Announcements</h3>
+                    <h3>Official Notice Board &amp; Circulars</h3>
                 </td>
             </tr>
         </table>
 
         <br>
 
-        <!-- Navigation Menu -->
         <nav aria-label="Main Navigation">
             <table border="1" width="100%" cellpadding="8">
                 <tr align="center">
@@ -40,7 +37,7 @@
                     <th><a href="academics.html">Academics</a></th>
                     <th><a href="notice.html" aria-current="page">Notices</a></th>
                     <th><a href="events.html">Events</a></th>
-                    <th><a href="studentsupport.html">Student Support</a></th>
+                    <th><a href="studentsupport.html">Support</a></th>
                     <th><a href="contact.html">Contact Us</a></th>
                     <th><a href="feedback.html">Feedback</a></th>
                     <th><a href="profile.html">Profile</a></th>
@@ -51,132 +48,54 @@
 
     <br>
 
-    <!-- Main Content Area -->
     <main id="main-content">
 
-        <!-- Intermediate Extension: Breadcrumb Navigation -->
         <nav aria-label="Breadcrumb">
             <p align="left">
-                <a href="index.html">Home</a> &gt; <b>Notices</b>
+                <a href="index.html">Home</a> &gt; <b>Notice Board</b>
             </p>
         </nav>
 
-        <section aria-labelledby="notices-page-title">
+        <section aria-labelledby="notice-title">
             <div align="center">
-                <h2 id="notices-page-title">Latest College Notices</h2>
-                <p>Stay updated with the latest announcements.</p>
+                <h1 id="notice-title">Latest Circulars &amp; Announcements</h1>
+                <p>Stay updated with official administrative and departmental updates.</p>
             </div>
             <hr>
-
-            <!-- Notices Table Section -->
-            <table border="1" width="100%" cellpadding="10">
-                <thead>
-                    <tr>
-                        <th scope="col">Notice No.</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Notice Title</th>
-                        <th scope="col">Department</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td align="center">001</td>
-                        <td><time datetime="2026-07-25">25/07/2026</time></td>
-                        <td>Semester Registration Started</td>
-                        <td>Academic</td>
-                        <td align="center">Active</td>
-                    </tr>
-                    <tr>
-                        <td align="center">002</td>
-                        <td><time datetime="2026-07-26">26/07/2026</time></td>
-                        <td>Internal Examination Schedule Released</td>
-                        <td>Examination Cell</td>
-                        <td align="center">Active</td>
-                    </tr>
-                    <tr>
-                        <td align="center">003</td>
-                        <td><time datetime="2026-07-27">27/07/2026</time></td>
-                        <td>Hackathon Registration Open</td>
-                        <td>Computer Department</td>
-                        <td align="center">Active</td>
-                    </tr>
-                    <tr>
-                        <td align="center">004</td>
-                        <td><time datetime="2026-07-29">29/07/2026</time></td>
-                        <td>Workshop on Artificial Intelligence</td>
-                        <td>Training Cell</td>
-                        <td align="center">Upcoming</td>
-                    </tr>
-                    <tr>
-                        <td align="center">005</td>
-                        <td><time datetime="2026-07-30">30/07/2026</time></td>
-                        <td>Library Book Submission Reminder</td>
-                        <td>Library</td>
-                        <td align="center">Important</td>
-                    </tr>
-                    <tr>
-                        <td align="center">006</td>
-                        <td><time datetime="2026-08-01">01/08/2026</time></td>
-                        <td>Independence Day Celebration Practice</td>
-                        <td>Cultural Committee</td>
-                        <td align="center">Upcoming</td>
-                    </tr>
-                </tbody>
-            </table>
         </section>
 
         <br>
 
-        <!-- Important Announcements Section -->
-        <aside aria-labelledby="announcements-heading">
-            <h2 id="announcements-heading" align="center">Important Announcements</h2>
+        <section aria-labelledby="circulars-heading">
+            <h2 id="circulars-heading" align="center">Recent Circulars</h2>
 
-            <fieldset>
-                <legend><b>Announcements</b></legend>
-                <ul>
-                    <li>Semester Registration closes on <b><time datetime="2026-07-31">31 July 2026</time></b>.</li>
-                    <li>Internal Examination begins from <b><time datetime="2026-08-10">10 August 2026</time></b>.</li>
-                    <li>Hackathon registration is open for all CSE students.</li>
-                    <li>Library will remain open until 8:00 PM during exams.</li>
-                    <li>Placement Training starts next Monday.</li>
-                </ul>
-            </fieldset>
-        </aside>
-
-        <br>
-
-        <!-- Upcoming Dates Section -->
-        <section aria-labelledby="dates-heading">
-            <h2 id="dates-heading" align="center">Upcoming Important Dates</h2>
-
-            <table border="1" width="70%" align="center" cellpadding="10">
+            <table border="1" width="100%" cellpadding="10">
                 <thead>
                     <tr>
-                        <th scope="col">Activity</th>
-                        <th scope="col">Date</th>
+                        <th scope="col" width="15%">Publish Date</th>
+                        <th scope="col" width="20%">Notice ID</th>
+                        <th scope="col">Subject Title</th>
+                        <th scope="col" width="15%">Attachment</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Semester Registration Last Date</td>
-                        <td align="center"><time datetime="2026-07-31">31 July 2026</time></td>
+                        <td><time datetime="2026-08-01">01 Aug 2026</time></td>
+                        <td>GTU/EXAM/S26/01</td>
+                        <td><b>Mid-Semester Exam Schedule (Sem 3)</b></td>
+                        <td align="center"><a href="#" aria-label="Download Mid Sem Exam Schedule PDF">PDF Link</a></td>
                     </tr>
                     <tr>
-                        <td>Internal Examination</td>
-                        <td align="center"><time datetime="2026-08-10">10 August 2026</time></td>
+                        <td><time datetime="2026-07-28">28 Jul 2026</time></td>
+                        <td>CSE/DEPT/2026/09</td>
+                        <td><b>OOP Practical Assignment Deadline Extension</b></td>
+                        <td align="center"><a href="#" aria-label="Download Assignment Circular">PDF Link</a></td>
                     </tr>
                     <tr>
-                        <td>AI Workshop</td>
-                        <td align="center"><time datetime="2026-08-12">12 August 2026</time></td>
-                    </tr>
-                    <tr>
-                        <td>Hackathon</td>
-                        <td align="center"><time datetime="2026-08-20">20 August 2026</time></td>
-                    </tr>
-                    <tr>
-                        <td>Independence Day Celebration</td>
-                        <td align="center"><time datetime="2026-08-15">15 August 2026</time></td>
+                        <td><time datetime="2026-07-15">15 Jul 2026</time></td>
+                        <td>ADMIN/SCHOLAR/04</td>
+                        <td><b>Digital Gujarat Scholarship Application Guidance</b></td>
+                        <td align="center"><a href="#" aria-label="Download Scholarship Guidelines">PDF Link</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -187,7 +106,6 @@
     <br>
     <hr>
 
-    <!-- Footer Section -->
     <footer role="contentinfo">
         <div align="center">
             <h3>Student Hub Portal © 2026</h3>

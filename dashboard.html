@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Student Hub Portal</title>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Skip Link for Keyboard Accessibility -->
+    <!-- Accessibility Skip Link -->
     <a href="#main-content">Skip to main content</a>
 
     <!-- Header Section -->
@@ -22,7 +22,7 @@
                 </td>
                 <td align="center">
                     <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Student Dashboard</h3>
+                    <h3>Student Interactive Dashboard</h3>
                 </td>
             </tr>
         </table>
@@ -54,7 +54,7 @@
     <!-- Main Content Area -->
     <main id="main-content">
 
-        <!-- Intermediate Extension: Breadcrumb Navigation -->
+        <!-- Breadcrumb Navigation -->
         <nav aria-label="Breadcrumb">
             <p align="left">
                 <a href="index.html">Home</a> &gt; <b>Dashboard</b>
@@ -63,101 +63,31 @@
 
         <section aria-labelledby="welcome-heading">
             <div align="center">
-                <h2 id="welcome-heading">Welcome, Student</h2>
-                <p><h3>Access all your academic services from one place.</h3></p>
+                <h1 id="welcome-heading">Welcome Back!!</h1>
+                <p><b>Enrollment No:</b> 25CS093 | <b>Department:</b> Computer Science &amp; Engineering | <b>Semester:</b> 3</p>
             </div>
             <hr>
         </section>
 
-        <!-- Dashboard Grid Modules Section -->
-        <section aria-labelledby="modules-heading">
-            <h2 id="modules-heading" align="center">Dashboard Modules</h2>
-
-            <table border="1" width="100%" cellpadding="15">
-                <tbody>
-                    <tr align="center">
-                        <td width="33%">
-                            <article>
-                                <h3>Academics</h3>
-                                <p>Study materials, syllabus and timetable.</p>
-                                <a href="academics.html" aria-label="Open Academics module">Open</a>
-                            </article>
-                        </td>
-                        <td width="33%">
-                            <article>
-                                <h3>Certificates</h3>
-                                <p>View and download certificates.</p>
-                                <a href="certificates.html" aria-label="Open Certificates module">Open</a>
-                            </article>
-                        </td>
-                        <td width="33%">
-                            <article>
-                                <h3>Notices</h3>
-                                <p>Latest college announcements.</p>
-                                <a href="notice.html" aria-label="Open Notices module">Open</a>
-                            </article>
-                        </td>
-                    </tr>
-                    <tr align="center">
-                        <td>
-                            <article>
-                                <h3>Events</h3>
-                                <p>Upcoming workshops and competitions.</p>
-                                <a href="events.html" aria-label="Open Events module">Open</a>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <h3>Student Support</h3>
-                                <p>Raise complaints or request help.</p>
-                                <a href="studentsupport.html" aria-label="Open Student Support module">Open</a>
-                            </article>
-                        </td>
-                        <td>
-                            <article>
-                                <h3>Profile</h3>
-                                <p>View your personal information.</p>
-                                <a href="profile.html" aria-label="Open Profile module">Open</a>
-                            </article>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
         <br>
 
-        <!-- Student Summary Section -->
-        <section aria-labelledby="summary-heading">
-            <h2 id="summary-heading" align="center">Student Summary</h2>
-
-            <table border="1" width="70%" align="center" cellpadding="10">
+        <section aria-labelledby="stats-heading">
+            <h2 id="stats-heading" align="center">Academic Progress</h2>
+            <table border="1" width="95%" align="center" cellpadding="12">
                 <thead>
-                    <tr>
-                        <th scope="col" width="50%">Information</th>
-                        <th scope="col" width="50%">Status</th>
+                    <tr align="center">
+                        <th scope="col" width="25%">Overall Attendance</th>
+                        <th scope="col" width="25%">Current CGPA</th>
+                        <th scope="col" width="25%">Pending Assignments</th>
+                        <th scope="col" width="25%">Upcoming Exam</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row" align="left">Attendance</th>
-                        <td align="center">90%</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="left">Current Semester</th>
-                        <td align="center">Semester 3</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="left">Assignments</th>
-                        <td align="center">4 Pending</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="left">Upcoming Exams</th>
-                        <td align="center">2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" align="left">Certificates Available</th>
-                        <td align="center">3</td>
+                    <tr align="center">
+                        <td><b>91%</b> <br><small>(Good Standing)</small></td>
+                        <td><b>8.75 / 10</b> <br><small>(Sem 2 Result)</small></td>
+                        <td><b>02 Due</b> <br><small>(OOP &amp; FDSA)</small></td>
+                        <td><b>Mid-Sem Exam</b> <br><small>(Starting Sep 2026)</small></td>
                     </tr>
                 </tbody>
             </table>
@@ -165,19 +95,60 @@
 
         <br>
 
-        <!-- Recent Activities Section -->
-        <aside aria-labelledby="recent-activities-heading">
-            <h2 id="recent-activities-heading" align="center">Recent Activities</h2>
+        <section aria-labelledby="services-heading">
+            <h2 id="services-heading" align="center">Academic Portal Modules</h2>
 
-            <div align="center">
-                <ul style="display: inline-block; text-align: left;">
-                    <li>AI Workshop Registration Open.</li>
-                    <li>Semester Result Published.</li>
-                    <li>Hackathon on <time datetime="2026-08-15">15th August</time>.</li>
-                    <li>New Java Study Material Uploaded.</li>
-                    <li>Internal Exam Timetable Released.</li>
+            <table border="1" width="95%" align="center" cellpadding="12">
+                <tbody>
+                    <tr>
+                        <td width="33%" align="center">
+                            <h3>Academics &amp; Syllabus</h3>
+                            <p>Access course modules, daily lecture schedules, and syllabus structure.</p>
+                            <p><a href="academics.html" aria-label="Go to Academics Section">Go to Academics →</a></p>
+                        </td>
+                        <td width="33%" align="center">
+                            <h3>Digital Certificates</h3>
+                            <p>Apply for Bonafide, Character Certificates, or download Fee Receipts.</p>
+                            <p><a href="certificates.html" aria-label="Go to Certificates Section">Apply &amp; Download →</a></p>
+                        </td>
+                        <td width="33%" align="center">
+                            <h3>Circulars &amp; Notices</h3>
+                            <p>Stay updated with official GTU announcements and departmental notices.</p>
+                            <p><a href="notice.html" aria-label="Go to Notices Section">Check Updates →</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h3>E-Study Resources</h3>
+                            <p>Download unit notes, lecture slides, lab manuals, and old GTU papers.</p>
+                            <p><a href="studymaterials.html" aria-label="Go to Study Materials">Download Materials →</a></p>
+                        </td>
+                        <td align="center">
+                            <h3>Class Timetable</h3>
+                            <p>View your weekly lecture timetable, lab slots, and faculty schedule.</p>
+                            <p><a href="classschedule.html" aria-label="Go to Class Schedule">View Schedule →</a></p>
+                        </td>
+                        <td align="center">
+                            <h3>Student Profile</h3>
+                            <p>Review personal details, contact info, and academic history.</p>
+                            <p><a href="profile.html" aria-label="Go to Profile">View Profile →</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <br>
+
+        <aside aria-labelledby="alerts-heading">
+            <fieldset>
+                <legend><b id="alerts-heading">Important Dashboard Alerts!!</b></legend>
+                <ul>
+                    <li><b>Mid-Semester Submission:</b> OOP Lab Assignment 3 submission date is extended to <b>12th August 2026</b>.</li>
+                    <li><b>Exam Form Notice:</b> Online GTU exam form filling for Semester 3 is now open on the official portal.</li>
+                    <li><b>Workshop Alert:</b> Upcoming Seminar on <i>"Web Development Frameworks"</i> this Friday.</li>
                 </ul>
-            </div>
+            </fieldset>
         </aside>
 
     </main>
@@ -189,7 +160,6 @@
     <footer role="contentinfo">
         <div align="center">
             <h3>Student Hub Portal © 2026</h3>
-            <p>Designed for Educational Purpose</p>
         </div>
     </footer>
 
