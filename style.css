@@ -1,148 +1,258 @@
-
-* {
+/* ==========================================
+   ૧. CSS Variables & Reset
+   ========================================== */
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --primary-dark: #2e1065;   /* Deep Dark Purple */
+    --primary: #5b21b6;        /* Vivid Indigo/Purple */
+    --primary-light: #7c3aed;  /* Bright Purple Accent */
+    --accent-gold: #06b6d4;     /* Neon Cyan Highlight */
+    --accent-hover: #0891b2;    /* Dark Cyan */
+    --bg-main: #f8fafc;         /* Clean Soft Gray */
+    --bg-card: #ffffff;         /* Pure White Card */
+    --bg-tint: #ecfeff;         /* Soft Cyan Tint */
+    --text-main: #0f172a;       /* Dark Slate Text */
+    --text-muted: #64748b;      /* Muted Gray Text */
+    --border-color: #cbd5e1;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #1e293b;            /* Dark Slate Text */
-    background-color: #f8fafc;  /* Soft Warm Off-White */
-    padding: 15px;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Accessible Skip Link */
+/* Accessiblity Skip Link */
 a[href="#main-content"] {
     position: absolute;
-    top: -50px;
+    top: -60px;
     left: 10px;
-    background: #047857;
-    color: #ffffff;
+    background: var(--accent-gold);
+    color: var(--primary-dark);
     padding: 8px 12px;
     z-index: 100;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
+    transition: top 0.2s;
 }
-
 a[href="#main-content"]:focus {
     top: 10px;
 }
 
-/* 2. Header & Branding */
+/* ==========================================
+   ૨. Header & Flexbox Navigation
+   ========================================== */
 header {
-    background-color: #ffffff;
-    border-bottom: 3px solid #047857; /* Rich Emerald Accent */
-    padding-bottom: 10px;
+    background-color: var(--bg-card);
+    border-bottom: 4px solid var(--primary-light);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-header table {
-    border: 2px solid #047857 !important;
-    border-collapse: collapse;
-    background-color: #ecfdf5; /* Soft Mint Background */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-header h1 {
-    color: #064e3b; /* Deep Forest Emerald */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.brand h1 {
+    color: var(--primary-dark);
     font-size: 1.8rem;
-    letter-spacing: 1px;
+    font-weight: 800;
 }
 
-header h3 {
-    color: #047857;
-    font-weight: 500;
+.brand p {
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
-/* 3. Navigation Bar */
-nav[aria-label="Main Navigation"] table {
-    border: 1px solid #10b981 !important;
-    border-collapse: collapse;
-    background-color: #064e3b; /* Dark Emerald Header Bar */
+/* Navigation Menu */
+nav[aria-label="Main Navigation"] {
+    background-color: var(--primary-dark);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-nav[aria-label="Main Navigation"] th {
-    padding: 10px;
-    border: 1px solid #047857 !important;
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
-nav[aria-label="Main Navigation"] a {
-    color: #ebf6f2e2;
+@media (min-width: 640px) {
+    .nav-list {
+        flex-direction: row;
+    }
+}
+
+.nav-list a {
+    color: #f1f5f9;
     text-decoration: none;
     font-weight: 600;
+    padding: 0.75rem 1.2rem;
     display: block;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
-nav[aria-label="Main Navigation"] a:hover,
-nav[aria-label="Main Navigation"] a:focus {
-    color: #fef08a; /* Soft Warm Gold Highlight */
-    text-decoration: underline;
+.nav-list a:hover,
+.nav-list a:focus {
+    color: var(--primary-dark);
+    background-color: var(--accent-gold);
 }
 
-/* Current Page Indicator */
-nav[aria-label="Main Navigation"] a[aria-current="page"] {
-    background-color: #047857;
-    color: #fef08a;
-    padding: 4px 8px;
-    border-radius: 4px;
+.nav-list a[aria-current="page"] {
+    background-color: var(--primary-light);
+    color: #ffffff;
 }
 
-/* 4. Headings & Divider Lines */
-h1, h2, h3 {
-    color: #064e3b;
-    margin-bottom: 10px;
+/* ==========================================
+   ૩. Layout, Grid & Cards
+   ========================================== */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+.page-title {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
 }
 
 hr {
     border: 0;
-    height: 2px;
-    background: #10b981;
-    margin: 15px 0;
+    height: 3px;
+    background: var(--accent-gold);
+    margin: 1rem 0 1.5rem;
+    border-radius: 2px;
 }
 
-/* 5. Tables & Data Display */
+/* Responsive Grid System */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Card Component */
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   ૪. Responsive Table & Forms
+   ========================================== */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
 table {
+    width: 100%;
     border-collapse: collapse;
-    margin: 10px auto;
-    background-color: #ffffff;
-}
-
-table[border="1"] {
-    border: 1px solid #cbd5e1 !important;
+    background-color: var(--bg-card);
 }
 
 thead th {
-    background-color: #064e3b !important;
-    color: #ffffff !important;
-    font-size: 1rem;
-    padding: 10px;
+    background-color: var(--primary-dark);
+    color: #ffffff;
+    font-size: 0.95rem;
+    padding: 12px;
+    text-align: left;
 }
 
 tbody td {
-    border: 1px solid #3269b1 !important;
-    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 12px;
 }
 
-/* Alternating Row Color for High Scannability */
 tbody tr:nth-child(even) {
-    background-color: #f0fdf4;
+    background-color: #f8fafc;
 }
 
-
-
-/* 6. Form Controls & Buttons */
 fieldset {
-    border: 2px solid #047857;
+    border: 2px solid var(--primary-light);
     border-radius: 8px;
-    padding: 15px;
-    background-color: #ffffff;
+    padding: 1.25rem;
+    background-color: var(--bg-card);
 }
 
 legend {
-    color: #064e3b;
+    color: var(--primary-dark);
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
 }
 
 input[type="text"],
@@ -152,69 +262,58 @@ input[type="tel"],
 select,
 textarea {
     width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #94b8a8;
-    border-radius: 4px;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
     font-size: 0.95rem;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-select:focus {
-    outline: 2px solid #047857;
-    border-color: #047857;
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--primary-light);
+    border-color: var(--primary-light);
 }
 
-/* Submit & Action Buttons */
-input[type="submit"],
-input[type="reset"],
-button {
-    background-color: #047857;
-    color: #ffffff;
+.button-group {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+input[type="submit"], input[type="reset"], button, .btn {
+    background-color: var(--accent-gold);
+    color: var(--primary-dark);
     border: none;
-    padding: 9px 20px;
+    padding: 10px 20px;
     font-size: 0.95rem;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.2s;
 }
 
-input[type="submit"]:hover,
-button:hover {
-    background-color: #064e3b;
+input[type="submit"]:hover, button:hover, .btn:hover {
+    background-color: var(--accent-hover);
 }
 
 input[type="reset"] {
     background-color: #64748b;
+    color: #ffffff;
 }
 
 input[type="reset"]:hover {
     background-color: #475569;
 }
 
-/* 7. Links & Interactive Elements */
-a {
-    color: #047857;
-    text-decoration: underline;
-}
-
-a:hover,
-a:focus {
-    color: #064e3b;
-}
-
-/* 8. Footer Section */
+/* ==========================================
+   ૫. Footer
+   ========================================== */
 footer {
-    background-color: #064e3b;
+    background-color: var(--primary-dark);
     color: #ffffff;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 4px;
-}
-
-footer h3 {
-    color: #ffffff;
-    font-weight: 400;
-    margin: 0;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+    text-align: center;
 }
