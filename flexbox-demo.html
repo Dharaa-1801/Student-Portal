@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation & Card Demo</title>
+    <style>
+        :root {
+            --primary-dark: #2e1065;
+            --primary-light: #7c3aed;
+            --accent-gold: #06b6d4;
+            --bg-card: #ffffff;
+            --border-color: #cbd5e1;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f8fafc;
+        }
+
+        /* Flexbox Header Navigation */
+        .flex-header {
+            background-color: var(--primary-dark);
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .flex-header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .logo-text {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .flex-nav {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex-nav a {
+            color: #f1f5f9;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+
+        .flex-nav a:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+
+        /* Flexbox Content Section */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .flex-card {
+            flex: 1 1 300px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .flex-card h3 {
+            color: var(--primary-dark);
+            margin-top: 0;
+        }
+
+        .btn-flex {
+            background-color: var(--primary-light);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: flex-start;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flexbox Navigation -->
+    <header class="flex-header">
+        <div class="logo-text">Student Hub Portal</div>
+        <ul class="flex-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </header>
+
+    <!-- Flexbox Main Cards Layout -->
+    <main class="flex-container">
+        <div class="flex-card">
+            <h3>Object Oriented Programming</h3>
+            <p>Practical Assignment - Class & Inheritance Lab Work.</p>
+            <button class="btn-flex">View Details</button>
+        </div>
+        <div class="flex-card">
+            <h3>Data Structures & Algorithms</h3>
+            <p>Lab Sheet 2 - Linked List Implementation & Queue operations.</p>
+            <button class="btn-flex">View Details</button>
+        </div>
+    </main>
+
+</body>
+</html>

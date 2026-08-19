@@ -15,40 +15,28 @@
 
     <!-- Header Section -->
     <header role="banner">
-        <table border="1" width="100%" cellpadding="10">
-            <tr>
-                <td width="20%" align="center">
-                    <img src="studenthublogo.png" width="150" height="150" alt="Student Hub Logo">
-                </td>
-                <td align="center">
-                    <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Feedback</h3>
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
-        <!-- Navigation Menu -->
+        <div class="header-container">
+            <div class="brand">
+                <h1>STUDENT HUB PORTAL</h1>
+                <p>Academic Dashboard</p>
+            </div>
+        </div>  
         <nav aria-label="Main Navigation">
-            <table border="1" width="100%" cellpadding="8">
-                <tr align="center">
-                    <th><a href="index.html">Home</a></th>
-                    <th><a href="about.html">About</a></th>
-                    <th><a href="login.html">Login</a></th>
-                    <th><a href="dashboard.html">Dashboard</a></th>
-                    <th><a href="academics.html">Academics</a></th>
-                    <th><a href="notice.html">Notices</a></th>
-                    <th><a href="events.html">Events</a></th>
-                    <th><a href="studentsupport.html">Student Support</a></th>
-                    <th><a href="contact.html">Contact Us</a></th>
-                    <th><a href="feedback.html" aria-current="page">Feedback</a></th>
-                    <th><a href="profile.html">Profile</a></th>
-                </tr>
-            </table>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="notice.html">Notices</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="studentsupport.html">Support</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+            </ul>
         </nav>
     </header>
-
     <br>
 
     <!-- Main Content Area -->
@@ -104,10 +92,10 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr>
+                        
                             <td>Rate the Portal</td>
                             <td>
-                                <input type="radio" id="rate-excellent" name="rate" value="excellent" required>
+                                <input type="radio" id="rate-excellent" name="rate" value="excellent">
                                 <label for="rate-excellent">Excellent</label>
                                 
                                 <input type="radio" id="rate-good" name="rate" value="good">
@@ -120,20 +108,21 @@
                                 <label for="rate-poor">Poor</label>
                             </td>
                         </tr>
+                        
                         <tr>
                             <td>Services Used</td>
                             <td>
                                 <input type="checkbox" id="srv-academics" name="services[]" value="academics">
-                                <label for="srv-academics">Academics</label><br>
+                                <label for="srv-academics">Academics</label>
 
                                 <input type="checkbox" id="srv-notices" name="services[]" value="notices">
-                                <label for="srv-notices">Notices</label><br>
+                                <label for="srv-notices">Notices</label>
 
                                 <input type="checkbox" id="srv-events" name="services[]" value="events">
-                                <label for="srv-events">Events</label><br>
+                                <label for="srv-events">Events</label>
 
                                 <input type="checkbox" id="srv-certificates" name="services[]" value="certificates">
-                                <label for="srv-certificates">Certificates</label><br>
+                                <label for="srv-certificates">Certificates</label>
 
                                 <input type="checkbox" id="srv-support" name="services[]" value="support">
                                 <label for="srv-support">Student Support</label>

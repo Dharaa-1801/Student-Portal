@@ -13,36 +13,26 @@
     <a href="#main-content">Skip to main content</a>
 
     <header role="banner">
-        <table border="1" width="100%" cellpadding="10">
-            <tr>
-                <td width="20%" align="center">
-                    <img src="studenthublogo.png" width="150" height="150" alt="Student Hub Logo">
-                </td>
-                <td align="center">
-                    <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Centralized Academic &amp; Campus Gateway</h3>
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
+        <div class="header-container">
+            <div class="brand">
+                <h1>STUDENT HUB PORTAL</h1>
+                <p>Academic Dashboard</p>
+            </div>
+        </div>  
         <nav aria-label="Main Navigation">
-            <table border="1" width="100%" cellpadding="8">
-                <tr align="center">
-                    <th><a href="index.html" aria-current="page">Home</a></th>
-                    <th><a href="about.html">About</a></th>
-                    <th><a href="login.html">Login</a></th>
-                    <th><a href="dashboard.html">Dashboard</a></th>
-                    <th><a href="academics.html">Academics</a></th>
-                    <th><a href="notice.html">Notices</a></th>
-                    <th><a href="events.html">Events</a></th>
-                    <th><a href="studentsupport.html">Support</a></th>
-                    <th><a href="contact.html">Contact Us</a></th>
-                    <th><a href="feedback.html">Feedback</a></th>
-                    <th><a href="profile.html">Profile</a></th>
-                </tr>
-            </table>
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="notice.html">Notices</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="studentsupport.html">Support</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -50,54 +40,19 @@
 
     <main id="main-content">
 
-        <section aria-labelledby="hero-title">
-            <div align="center">
-                <h1 id="hero-title">Empowering Students with Seamless Campus Connectivity</h1>
-                <p>Access mid-sem results, course syllabus, lab manuals, and official administrative requests instantly.</p>
+        <h2 class="page-title">Welcome to Student Hub</h2>
+        <hr>
+
+        <section class="card" style="display: flex; flex-direction: column; gap: 1rem;">
+            <h3>Flexbox Content Layout</h3>
+            <p>This layout uses flexbox to align items cleanly across single dimensions.</p>
+            
+            <!-- Flexbox Button Group -->
+            <div class="button-group">
+                <a href="dashboard.html" class="btn">View Dashboard</a>
+                <a href="profile.html" class="btn">View Profile</a>
             </div>
-            <hr>
         </section>
-
-        <br>
-
-        <!-- Unique Highlight Cards -->
-        <section aria-labelledby="highlights-heading">
-            <h2 id="highlights-heading" align="center">Portal Key Services</h2>
-
-            <table border="1" width="95%" align="center" cellpadding="12">
-                <tbody>
-                    <tr>
-                        <td width="33%" align="center">
-                            <h3>Real-Time Academic Tracking</h3>
-                            <p>Monitor your weekly attendance, Internal test marks, and academic status online without visiting the admin office.</p>
-                        </td>
-                        <td width="33%" align="center">
-                            <h3>Instant E-Certificates</h3>
-                            <p>Submit online applications for Bonafide certificates, NOCs, and character letters with instant progress updates.</p>
-                        </td>
-                        <td width="33%" align="center">
-                            <h3>Department Repository</h3>
-                            <p>Direct download access to subject notes, video tutorial links, reference books, and old GTU exam papers.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <br>
-
-        <!-- Quick News Ticker / Latest Campus Feed -->
-        <aside aria-labelledby="updates-heading">
-            <fieldset>
-                <legend><b id="updates-heading">Latest Campus Highlights</b></legend>
-                <ul>
-                    <li><b>GTU Registration:</b> Semester 3 enrolment verification link is now active under the Profile tab.</li>
-                    <li><b>TechFest 2026:</b> Registration open for the Annual Technical Symposium. Visit the Events page to register your team.</li>
-                    <li><b>Library Extension:</b> Central library reading room hours extended up to 8:00 PM during mid-sem exams.</li>
-                </ul>
-            </fieldset>
-        </aside>
-
     </main>
 
     <br>

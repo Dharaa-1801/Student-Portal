@@ -1,168 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Student Hub Portal</title>
- <link rel="stylesheet" href="style.css">
+    <title>Dashboard - CSS Grid Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Accessibility Skip Link -->
-    <a href="#main-content">Skip to main content</a>
-
-    <!-- Header Section -->
     <header role="banner">
-        <table border="1" width="100%" cellpadding="10">
-            <tr>
-                <td width="20%" align="center">
-                    <img src="studenthublogo.png" width="150" height="150" alt="Student Hub Logo">
-                </td>
-                <td align="center">
-                    <h1>STUDENT HUB PORTAL</h1>
-                    <h3>Student Interactive Dashboard</h3>
-                </td>
-            </tr>
-        </table>
-
-        <br>
-
-        <!-- Navigation Menu -->
+        <div class="header-container">
+            <div class="brand">
+                <h1>STUDENT HUB PORTAL</h1>
+                <p>Academic Dashboard</p>
+            </div>
+        </div>  
         <nav aria-label="Main Navigation">
-            <table border="1" width="100%" cellpadding="8">
-                <tr align="center">
-                    <th><a href="index.html">Home</a></th>
-                    <th><a href="about.html">About</a></th>
-                    <th><a href="login.html">Login</a></th>
-                    <th><a href="dashboard.html" aria-current="page">Dashboard</a></th>
-                    <th><a href="academics.html">Academics</a></th>
-                    <th><a href="notice.html">Notices</a></th>
-                    <th><a href="events.html">Events</a></th>
-                    <th><a href="studentsupport.html">Support</a></th>
-                    <th><a href="contact.html">Contact Us</a></th>
-                    <th><a href="feedback.html">Feedback</a></th>
-                    <th><a href="profile.html">Profile</a></th>
-                </tr>
-            </table>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="notice.html">Notices</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="studentsupport.html">Support</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
         </nav>
     </header>
-
-    <br>
-
-    <!-- Main Content Area -->
     <main id="main-content">
+        <h2 class="page-title">Academic Statistics</h2>
+        <hr>
 
-        <!-- Breadcrumb Navigation -->
-        <nav aria-label="Breadcrumb">
-            <p align="left">
-                <a href="index.html">Home</a> &gt; <b>Dashboard</b>
-            </p>
-        </nav>
-
-        <section aria-labelledby="welcome-heading">
-            <div align="center">
-                <h1 id="welcome-heading">Welcome Back!!</h1>
-                <p><b>Enrollment No:</b> 25CS093 | <b>Department:</b> Computer Science &amp; Engineering | <b>Semester:</b> 3</p>
+        <!-- CSS Grid 4 Column Layout -->
+        <section class="grid-4">
+            <div class="card">
+                <h3>Current Semester</h3>
+                <p style="font-size: 1.5rem; color: var(--accent-gold); font-weight: bold;">Semester 3</p>
             </div>
-            <hr>
+            <div class="card">
+                <h3>Attendance</h3>
+                <p style="font-size: 1.5rem; color: var(--accent-gold); font-weight: bold;">91%</p>
+            </div>
+            <div class="card">
+                <h3>CGPA</h3>
+                <p style="font-size: 1.5rem; color: var(--accent-gold); font-weight: bold;">8.75 / 10</p>
+            </div>
+            <div class="card">
+                <h3>Assignments</h3>
+                <p style="font-size: 1.5rem; color: var(--accent-gold); font-weight: bold;">2 Pending</p>
+            </div>
         </section>
 
         <br>
 
-        <section aria-labelledby="stats-heading">
-            <h2 id="stats-heading" align="center">Academic Progress</h2>
-            <table border="1" width="95%" align="center" cellpadding="12">
-                <thead>
-                    <tr align="center">
-                        <th scope="col" width="25%">Overall Attendance</th>
-                        <th scope="col" width="25%">Current CGPA</th>
-                        <th scope="col" width="25%">Pending Assignments</th>
-                        <th scope="col" width="25%">Upcoming Exam</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr align="center">
-                        <td><b>91%</b> <br><small>(Good Standing)</small></td>
-                        <td><b>8.75 / 10</b> <br><small>(Sem 2 Result)</small></td>
-                        <td><b>02 Due</b> <br><small>(OOP &amp; FDSA)</small></td>
-                        <td><b>Mid-Sem Exam</b> <br><small>(Starting Sep 2026)</small></td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- CSS Grid 2 Column Layout -->
+        <section class="grid-2">
+            <div class="card">
+                <h3>Recent Announcements</h3>
+                <p>• Mid-sem exam schedule published.</p>
+                <p>• Digital Electronics project submission deadline extended.</p>
+            </div>
+            <div class="card">
+                <h3>Quick Links</h3>
+                <p>• Download Exam Hall Ticket</p>
+                <p>• View Class Time Table</p>
+            </div>
         </section>
-
-        <br>
-
-        <section aria-labelledby="services-heading">
-            <h2 id="services-heading" align="center">Academic Portal Modules</h2>
-
-            <table border="1" width="95%" align="center" cellpadding="12">
-                <tbody>
-                    <tr>
-                        <td width="33%" align="center">
-                            <h3>Academics &amp; Syllabus</h3>
-                            <p>Access course modules, daily lecture schedules, and syllabus structure.</p>
-                            <p><a href="academics.html" aria-label="Go to Academics Section">Go to Academics →</a></p>
-                        </td>
-                        <td width="33%" align="center">
-                            <h3>Digital Certificates</h3>
-                            <p>Apply for Bonafide, Character Certificates, or download Fee Receipts.</p>
-                            <p><a href="certificates.html" aria-label="Go to Certificates Section">Apply &amp; Download →</a></p>
-                        </td>
-                        <td width="33%" align="center">
-                            <h3>Circulars &amp; Notices</h3>
-                            <p>Stay updated with official GTU announcements and departmental notices.</p>
-                            <p><a href="notice.html" aria-label="Go to Notices Section">Check Updates →</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <h3>E-Study Resources</h3>
-                            <p>Download unit notes, lecture slides, lab manuals, and old GTU papers.</p>
-                            <p><a href="studymaterials.html" aria-label="Go to Study Materials">Download Materials →</a></p>
-                        </td>
-                        <td align="center">
-                            <h3>Class Timetable</h3>
-                            <p>View your weekly lecture timetable, lab slots, and faculty schedule.</p>
-                            <p><a href="classschedule.html" aria-label="Go to Class Schedule">View Schedule →</a></p>
-                        </td>
-                        <td align="center">
-                            <h3>Student Profile</h3>
-                            <p>Review personal details, contact info, and academic history.</p>
-                            <p><a href="profile.html" aria-label="Go to Profile">View Profile →</a></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <br>
-
-        <aside aria-labelledby="alerts-heading">
-            <fieldset>
-                <legend><b id="alerts-heading">Important Dashboard Alerts!!</b></legend>
-                <ul>
-                    <li><b>Mid-Semester Submission:</b> OOP Lab Assignment 3 submission date is extended to <b>12th August 2026</b>.</li>
-                    <li><b>Exam Form Notice:</b> Online GTU exam form filling for Semester 3 is now open on the official portal.</li>
-                    <li><b>Workshop Alert:</b> Upcoming Seminar on <i>"Web Development Frameworks"</i> this Friday.</li>
-                </ul>
-            </fieldset>
-        </aside>
-
     </main>
 
-    <br>
-    <hr>
-
-    <!-- Footer Section -->
-    <footer role="contentinfo">
-        <div align="center">
-            <h3>Student Hub Portal © 2026</h3>
-        </div>
+    <footer>
+        <p>Student Hub Portal © 2026</p>
     </footer>
 
 </body>
-
 </html>
